@@ -20,3 +20,4 @@ TODO
 * Re-enable asset pipeline
 * Update deploy procedure to not throw user-facing errors while installing gems
 * Unicode isn't working in the Guestbook.
+* We can haz admin area?
