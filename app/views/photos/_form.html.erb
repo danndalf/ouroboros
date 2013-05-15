@@ -1,0 +1,37 @@
+<%= form_for(@photo, :html => { :multipart => true }) do |f| %>
+  <% if @photo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@photo.errors.count, "error") %> prohibited this photo from being saved:</h2>
+
+      <ul>
+      <% @photo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.file_field :photograph %>
+  </div>
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description, :rows => 5 %>
+  </div>
+  <div class="field">
+    <%= f.label 'Where this photo was taken' %>
+    <%= f.text_field :place %>
+  </div>
+  <div class="field">
+    <%= f.label 'The year this photo was taken' %>
+    <%= f.date_select :when, { :start_year => Time.now.year, :end_year => Time.now.year - 50, :discard_day => true, :discard_month => true } %>
+  </div>
+
+  <p>
+    Please share this photo below if you're comfortable with it being publicly published now on this site.
+  </p>
+
+  <div class="actions">
+    <%= f.submit 'Share this photo' %>
+  </div>
+<% end %>

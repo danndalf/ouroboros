@@ -1,4 +1,4 @@
-    <div class="sixteen columns">
+<div class="sixteen columns">
 <% @stories.each do |story| %>
 <p class="story">
   <strong><%= link_to story.title, story %></strong> (<%= story.when.year %><% if story.place != ''%> in <%= story.place %><% end %>) <em>by <% if story.email != '' %><a href="mailto:<%= story.email %>"><% end %><%= story.submitter %><% if story.email != '' %></a><% end %></em>

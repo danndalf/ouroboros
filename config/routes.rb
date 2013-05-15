@@ -1,4 +1,6 @@
 Ouroboros::Application.routes.draw do
+  resources :photos
+
   resources :stories
 
   # The priority is based upon order of creation:

@@ -122,7 +122,7 @@
 		font-family: 'SourceSansProSemiBold', 'HelveticaNeue', Helvetica Arial, sans-serif;
 		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+	h1 { font-size: 46px; line-height: 50px; margin-bottom: 24px;}
 	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
 	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
@@ -339,3 +339,7 @@
 	nav { height: 180px; }
 	nav ul { list-style-type:none; margin:0px 5px; padding:0px;}
 	nav a { display:block; float: left; padding: 15px; margin: 0px 5px; width: 118px; background-color: #EEE; text-decoration: none;}
+
+/* #Photos and Albums
+================================================== */
+	.album img { padding: 16px 18px;}

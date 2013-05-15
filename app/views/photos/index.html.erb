@@ -1,0 +1,7 @@
+<div class="album">
+<% @photos.each do |photo| %><%= link_to image_tag(photo.photograph.url(:small)), photo %><% end %>
+</div>
+
+<div class="sixteen columns">
+  <div style="clear:both; margin: 25px 0px;"><%= link_to 'Share a New Photo', new_photo_path %></div>
+</div>

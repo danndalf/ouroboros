@@ -1,0 +1,17 @@
+<div class="sixteen columns">
+
+<p id="notice"><%= notice %></p>
+
+<p><%= image_tag @photo.photograph.url(:large) %></p>
+
+<p>
+  <%= @photo.description %>
+</p>
+
+<p>
+  Taken in 
+  <%= @photo.when %><% if @photo.place != '' %>, in 
+    <%= @photo.place %>
+  <% end %>
+</p>
+</div>
