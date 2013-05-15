@@ -18,10 +18,10 @@ namespace :deploy do
    task :start do ; end
    task :stop do ; end
    task :restart, :roles => :app, :except => { :no_release => true } do
-     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
    	 run "cd #{File.join(current_path)}; bundle install && bundle install --deployment"
    	 run "cd #{File.join(current_path)}; cp /home/dann/s3.yml config/"
    	 run "cd #{File.join(current_path)}; cp /home/dann/database.yml config/"
    	 run "cd #{File.join(current_path)}; RAILS_ENV=production rake db:migrate"
+     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
    end
 end
