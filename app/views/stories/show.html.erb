@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Submitter:</b>
+  <%= @story.submitter %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @story.name %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @story.content %>
+</p>
+
+<p>
+  <b>When:</b>
+  <%= @story.when %>
+</p>
+
+
+<%= link_to 'Edit', edit_story_path(@story) %> |
+<%= link_to 'Back', stories_path %>

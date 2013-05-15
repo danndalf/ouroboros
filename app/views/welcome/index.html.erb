@@ -1,0 +1,27 @@
+<h1>Stories</h1>
+
+<table>
+  <tr>
+    <th>Submitter</th>
+    <th>Name</th>
+    <th>Content</th>
+    <th>When</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @stories.each do |story| %>
+  <tr>
+    <td><%= story.submitter %></td>
+    <td><%= story.name %></td>
+    <td><%= story.content %></td>
+    <td><%= story.when %></td>
+    <td><%= link_to 'Show', story %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Story', new_story_path %>
