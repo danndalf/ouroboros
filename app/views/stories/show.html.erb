@@ -1,25 +1,20 @@
+		<div class="sixteen columns">
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Submitter:</b>
-  <%= @story.submitter %>
+  <h2><%= @story.title %></h2>
 </p>
 
 <p>
-  <b>Name:</b>
-  <%= @story.name %>
+  <%= @story.when.year %><% if @story.place != ''%> in <%= @story.place %><% end %>
 </p>
 
+
 <p>
-  <b>Content:</b>
   <%= @story.content %>
 </p>
 
 <p>
-  <b>When:</b>
-  <%= @story.when %>
+  <em>&mdash;<% if @story.email != '' %><a href="mailto:<%= @story.email %>"><% end %><%= @story.submitter %><% if @story.email != '' %></a><% end %>, <%= @story.created_at.month %>/<%= @story.created_at.day %>/<%= @story.created_at.year %></em>
 </p>
-
-
-<%= link_to 'Edit', edit_story_path(@story) %> |
-<%= link_to 'Back', stories_path %>
+</div>

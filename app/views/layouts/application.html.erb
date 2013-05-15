@@ -1,14 +1,70 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-  <title>Ouroboros</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Remembering Matthew</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="/stylesheets/base.css">
+	<link rel="stylesheet" href="/stylesheets/skeleton.css">
+	<link rel="stylesheet" href="/stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
 </head>
 <body>
 
-<%= yield %>
+	<div class="container">
+		<div class="sixteen columns">
+			<h1 style="margin-top: 40px"><a href="/">Remembering Matthew Schuler</a></h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/stories">Stories</a></li>
+				<li><a href="/photos">Photos</a></li>
+				<li><a href="/recordings">Recordings</a></li>
+				<li><a href="/videos">Videos</a></li>
+				<li><a href="/guestbook">Guestbook</a></li>
+			</ul>
+		</nav>
+
+    <%= yield %>
+
+		<div class="sixteen columns">
+			<hr style="margin-top: 2em"/>
+			<div style="text-align:center; margin-top: 2em; margin-bottom: 3em;">
+				<img src="/images/ouroboros.svg" title="/me misses ouroboros" alt="/me misses ouroboros" style="height:75px; width: 75px;"/>
+			</div>
+		</div>
+
+	</div><!-- container -->
 
 </body>
 </html>

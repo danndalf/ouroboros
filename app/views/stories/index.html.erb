@@ -1,29 +1,10 @@
-<h1>Listing stories</h1>
-
-<table>
-  <tr>
-    <th>Submitter</th>
-    <th>Name</th>
-    <th>Content</th>
-    <th>When</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+    <div class="sixteen columns">
 <% @stories.each do |story| %>
-  <tr>
-    <td><%= story.submitter %></td>
-    <td><%= story.name %></td>
-    <td><%= story.content %></td>
-    <td><%= story.when %></td>
-    <td><%= link_to 'Show', story %></td>
-    <td><%= link_to 'Edit', edit_story_path(story) %></td>
-    <td><%= link_to 'Destroy', story, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+<p class="story">
+  <strong><%= link_to story.title, story %></strong> (<%= story.when.year %><% if story.place != ''%> in <%= story.place %><% end %>) <em>by <% if story.email != '' %><a href="mailto:<%= story.email %>"><% end %><%= story.submitter %><% if story.email != '' %></a><% end %></em>
+</p>
 <% end %>
-</table>
 
-<br />
+<p><%= link_to 'Contribute a story of your own', new_story_path %></p>
 
-<%= link_to 'New Story', new_story_path %>
+</div>

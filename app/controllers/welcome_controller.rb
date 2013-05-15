@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
 
 	def index
-		@stories = Story.find(:all)
+		@stories = Story.limit(10).find(:all)
 	end
+	
 end
