@@ -18,5 +18,5 @@ TODO
 ----
 
 * Re-enable asset pipeline
-* Make tinyMCE editor window use larger (consistent with body) typeface for editing
 * Update deploy procedure to not throw user-facing errors while installing gems
+* Unicode isn't working in the Guestbook.
