@@ -1,6 +1,8 @@
 class Photo < ActiveRecord::Base
 	attr_accessible :description, :photograph, :place, :title, :when
 
+	validates :photograph, :presence => true
+	
 	include Paperclip
 	has_attached_file :photograph,
 		:styles => {
