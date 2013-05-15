@@ -328,6 +328,9 @@
 	.add-bottom { margin-bottom: 20px !important; }
 	p.story {margin-top: 1em;}
 	th { text-align: left; font-weight: bold; }
+	#tinymce body, #tinymce p { 
+		font: 18px/27px 'SourceSansProRegular', 'HelveticaNeue', Helvetica Arial, sans-serif;
+	}
 
 /* #Navigation and Sidebar
 ================================================== */
