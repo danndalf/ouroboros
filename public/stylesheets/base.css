@@ -327,6 +327,7 @@
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
 	p.story {margin-top: 1em;}
+	th { text-align: left; font-weight: bold; }
 
 /* #Navigation and Sidebar
 ================================================== */
