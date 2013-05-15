@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130515134525) do
+ActiveRecord::Schema.define(:version => 20130515192651) do
+
+  create_table "guests", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "address"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "photos", :force => true do |t|
     t.text     "description"
@@ -25,6 +34,15 @@ ActiveRecord::Schema.define(:version => 20130515134525) do
     t.datetime "photograph_updated_at"
   end
 
+  create_table "recordings", :force => true do |t|
+    t.string   "url"
+    t.text     "description"
+    t.datetime "when"
+    t.string   "place"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "stories", :force => true do |t|
     t.string   "submitter"
     t.string   "title"
@@ -34,6 +52,15 @@ ActiveRecord::Schema.define(:version => 20130515134525) do
     t.datetime "updated_at",                 :null => false
     t.string   "email",      :default => ""
     t.string   "place",      :default => ""
+  end
+
+  create_table "videos", :force => true do |t|
+    t.string   "url"
+    t.text     "description"
+    t.datetime "when"
+    t.string   "place"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end

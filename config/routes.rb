@@ -1,4 +1,10 @@
 Ouroboros::Application.routes.draw do
+  resources :guests
+
+  resources :videos
+
+  resources :recordings
+
   resources :photos
 
   resources :stories
