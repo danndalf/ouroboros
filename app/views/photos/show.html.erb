@@ -10,7 +10,8 @@
 
 <p>
   Taken in 
-  <%= @photo.when %><% if @photo.place != '' %>, in 
+  <%= @photo.when.year %>
+  <% if @photo.place != '' %> in 
     <%= @photo.place %>
   <% end %>
 </p>

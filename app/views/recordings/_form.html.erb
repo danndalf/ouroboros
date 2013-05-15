@@ -12,22 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :url %><br />
+    <%= f.label :'Title' %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :'The URL where this recording is stored in MP3 form' %>
     <%= f.text_field :url %>
   </div>
   <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.label :description %>
+    <%= f.text_area :description, :rows => 5 %>
   </div>
   <div class="field">
-    <%= f.label :when %><br />
-    <%= f.datetime_select :when %>
-  </div>
-  <div class="field">
-    <%= f.label :place %><br />
+    <%= f.label 'Where this recording was made' %>
     <%= f.text_field :place %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="field">
+    <%= f.label 'The year this recording was made' %>
+    <%= f.date_select :when, { :start_year => Time.now.year, :end_year => Time.now.year - 40, :discard_day => true, :discard_month => true } %>
   </div>
+
+  <p>
+    Please share this recording below if you're comfortable with it being publicly published now on this site.
+  </p>
+
+  <div class="actions">
+    <%= f.submit 'Share this recording' %>
+  </div>
+
 <% end %>

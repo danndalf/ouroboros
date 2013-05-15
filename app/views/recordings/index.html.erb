@@ -1,29 +1,11 @@
-<h1>Listing recordings</h1>
-
-<table>
-  <tr>
-    <th>Url</th>
-    <th>Description</th>
-    <th>When</th>
-    <th>Place</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="sixteen columns">
+<h2>Recordings</h2>
+<p><%= link_to 'Contribute a recording of your own', new_recording_path %></p>
 
 <% @recordings.each do |recording| %>
-  <tr>
-    <td><%= recording.url %></td>
-    <td><%= recording.description %></td>
-    <td><%= recording.when %></td>
-    <td><%= recording.place %></td>
-    <td><%= link_to 'Show', recording %></td>
-    <td><%= link_to 'Edit', edit_recording_path(recording) %></td>
-    <td><%= link_to 'Destroy', recording, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+  <div>  
+    <strong><%= link_to recording.title, recording %></strong> (<%= recording.when.year %><% if recording.place != '' %> in <%= recording.place %><% end %>)
+  </div>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New Recording', new_recording_path %>
+<div>

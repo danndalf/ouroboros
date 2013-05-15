@@ -1,25 +1,21 @@
+<div class="sixteen columns">
+
 <p id="notice"><%= notice %></p>
 
+<h3><%= @recording.title %></h3>
+
 <p>
-  <b>Url:</b>
-  <%= @recording.url %>
+  <strong><%= link_to @recording.url, @recording.url %></strong>
 </p>
 
 <p>
-  <b>Description:</b>
   <%= @recording.description %>
 </p>
 
 <p>
-  <b>When:</b>
-  <%= @recording.when %>
+  Recorded in 
+  <%= @recording.when.year %><% if @recording.place != '' %> in 
+    <%= @recording.place %>
+  <% end %>
 </p>
-
-<p>
-  <b>Place:</b>
-  <%= @recording.place %>
-</p>
-
-
-<%= link_to 'Edit', edit_recording_path(@recording) %> |
-<%= link_to 'Back', recordings_path %>
+</end>
