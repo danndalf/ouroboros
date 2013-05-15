@@ -5,7 +5,7 @@
 <p><%= image_tag @photo.photograph.url(:large) %></p>
 
 <p>
-  <%= @photo.description %>
+  <%= @photo.description.html_safe %>
 </p>
 
 <p>
