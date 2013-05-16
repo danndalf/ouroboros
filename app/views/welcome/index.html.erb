@@ -16,7 +16,9 @@
 
 <p>To contact his household, email <a href="mailto:rememberingmatthew@googlegroups.com">rememberingmatthew@googlegroups.com</a>.</p>
 
-<p>You are encouraged to share <%= link_to 'stories', stories_path %>, photos, recordings, and videos here of Matthew and your life with him.</p>
+<p>Out of respect for our dearly departed, many of Portland's top cocktail bars will be <a href="https://www.facebook.com/events/314688511994867/">silencing their shakers from 5:15pm to 5:25pm on Friday, May 17th</a>. No drinks will be made or served.</p>
+
+<p><em>You are encouraged to share <%= link_to 'stories', stories_path %>, <%= link_to 'photos', photos_path %>, <%= link_to 'recordings', recordings_path %>, and <%= link_to 'videos', videos_path %> here of Matthew and your life with him.</em></p>
 
 <h3>Most Recent Stories</h3>
 
@@ -26,7 +28,26 @@
 </p>
 <% end %>
 
-<p><%= link_to 'Contribute a story of your own', new_story_path %></p>
+<p><%= link_to 'Contribute a story of your own', new_story_path %> or <%= link_to 'view all stories', stories_path %></p>
+
+<h3>Most Recent Photos</h3>
+
+<div class="album">
+  <% @photos.each do |photo| %><%= link_to image_tag(photo.photograph.url(:small)), photo %><% end %>
+</div>
+
+<p><%= link_to 'Contribute a photo of your own', new_photo_path %> or <%= link_to 'view all photos', photos_path %></p>
+
+<h3>Most Recent Recordings</h3>
+
+<% @recordings.each do |recording| %>
+  <p>  
+    <strong><%= link_to recording.title, recording %></strong> (<%= recording.when.year %><% if recording.place != '' %> in <%= recording.place %><% end %>)
+  </p>
+<% end %>
+
+<p><%= link_to 'Contribute a recording of your own', new_recording_path %> or <%= link_to 'view all recordings', recordings_path %></p>
+
 
     </div>
     <div class="one-third column">

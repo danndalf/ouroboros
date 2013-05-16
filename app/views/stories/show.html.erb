@@ -15,6 +15,6 @@
 </p>
 
 <p>
-  <em>&mdash;<% if @story.email != '' %><a href="mailto:<%= @story.email %>"><% end %><%= @story.submitter %><% if @story.email != '' %></a><% end %>, <%= @story.created_at.month %>/<%= @story.created_at.day %>/<%= @story.created_at.year %></em>
+  <em>Submitted on <% if @story.submitter != '' %>&mdash;<% if @story.email != '' %><a href="mailto:<%= @story.email %>"><% end %><%= @story.submitter %><% if @story.email != '' %></a><% end %>, <% end %><%= @story.created_at.month %>/<%= @story.created_at.day %>/<%= @story.created_at.year %></em>
 </p>
 </div>
