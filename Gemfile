@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'aws-s3'
 gem 'aws-sdk'
 gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'activeadmin'
 
 # Gems used only for assets and not required
 # in production environments by default.
