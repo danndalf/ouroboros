@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: 022598c1e9982c9199d5b28971faa25281b0bb8d
+  revision: 2a74ca48f5a693566c179fa6c587e460b9584735
   specs:
-    paperclip (3.4.1)
+    paperclip (3.4.2)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -177,7 +177,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.37)
-    uglifier (2.1.0)
+    uglifier (2.1.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
     uuidtools (2.1.4)
