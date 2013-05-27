@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: 2a74ca48f5a693566c179fa6c587e460b9584735
+  revision: f55173018e246f2f8c196474cb85c7288491644c
   specs:
     paperclip (3.4.2)
       activemodel (>= 3.0.0)
@@ -119,7 +119,7 @@ GEM
       activesupport (~> 3.1)
       polyamorous (~> 0.5.0)
     mime-types (1.23)
-    multi_json (1.7.3)
+    multi_json (1.7.4)
     mysql2 (0.3.11)
     net-scp (1.1.1)
       net-ssh (>= 2.6.5)
