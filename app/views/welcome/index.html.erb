@@ -47,7 +47,7 @@
 </p>
 <% end %>
 
-<p><%= link_to 'Contribute a story of your own', new_story_path %> or <%= link_to 'view all stories', stories_path %></p>
+<p><%= link_to 'View all stories', stories_path %></p>
 
 <h3>Most Recent Photos</h3>
 
@@ -55,7 +55,7 @@
   <% @photos.each do |photo| %><%= link_to image_tag(photo.photograph.url(:small)), photo %><% end %>
 </div>
 
-<p><%= link_to 'Contribute a photo of your own', new_photo_path %> or <%= link_to 'view all photos', photos_path %></p>
+<p><%= link_to 'View all photos', photos_path %></p>
 
 <h3>Most Recent Recordings</h3>
 
@@ -65,7 +65,7 @@
   </p>
 <% end %>
 
-<p><%= link_to 'Contribute a recording of your own', new_recording_path %> or <%= link_to 'view all recordings', recordings_path %></p>
+<p><%= link_to 'Hear all recordings', recordings_path %></p>
 
 
     </div>

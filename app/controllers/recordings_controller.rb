@@ -21,30 +21,4 @@ class RecordingsController < ApplicationController
     end
   end
 
-  # GET /recordings/new
-  # GET /recordings/new.json
-  def new
-    @recording = Recording.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @recording }
-    end
-  end
-
-  # POST /recordings
-  # POST /recordings.json
-  def create
-    @recording = Recording.new(params[:recording])
-
-    respond_to do |format|
-      if @recording.save
-        format.html { redirect_to @recording, notice: 'Recording was successfully created.' }
-        format.json { render json: @recording, status: :created, location: @recording }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @recording.errors, status: :unprocessable_entity }
-      end
-    end
-  end
 end
