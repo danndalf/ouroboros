@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: bf5b404c6bb4c9a875adeb14a9509ff26c9bef69
+  revision: edfdc037c2efecfd1ed5faf04717181227d31418
   specs:
-    paperclip (3.4.2)
+    paperclip (3.5.0)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.0)
@@ -57,7 +57,7 @@ GEM
       builder
       mime-types
       xml-simple
-    aws-sdk (1.12.0)
+    aws-sdk (1.13.0)
       json (~> 1.4)
       nokogiri (< 1.6.0)
       uuidtools (~> 2.1)
@@ -119,7 +119,7 @@ GEM
       polyamorous (~> 0.5.0)
     mime-types (1.23)
     multi_json (1.7.7)
-    mysql2 (0.3.11)
+    mysql2 (0.3.13)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
