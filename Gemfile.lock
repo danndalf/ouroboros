@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: 203415c180f3474b49b95da563ae0272c0fd3b3f
+  revision: 0b080eeeb34eb16cc2ba831ccbea3fb523e147af
   specs:
     paperclip (3.5.1)
       activemodel (>= 3.0.0)
@@ -83,7 +83,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    devise (3.0.1)
+    devise (3.0.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -120,7 +120,7 @@ GEM
       activesupport (~> 3.1)
       polyamorous (~> 0.5.0)
     mime-types (1.23)
-    multi_json (1.7.8)
+    multi_json (1.7.9)
     mysql2 (0.3.13)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
