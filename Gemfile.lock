@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: a12dec104dde656917963ec6328390003595234a
+  revision: 7bf50e12848fbe7d70a013405425940303bb4112
   specs:
     paperclip (3.5.1)
       activemodel (>= 3.0.0)
@@ -57,11 +57,11 @@ GEM
       builder
       mime-types
       xml-simple
-    aws-sdk (1.15.0)
+    aws-sdk (1.16.1)
       json (~> 1.4)
       nokogiri (< 1.6.0)
       uuidtools (~> 2.1)
-    bcrypt-ruby (3.1.1)
+    bcrypt-ruby (3.1.2)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -89,7 +89,7 @@ GEM
       railties (>= 3.2.6, < 5)
       warden (~> 1.2.3)
     erubis (2.7.0)
-    execjs (2.0.0)
+    execjs (2.0.1)
     fastercsv (1.5.5)
     formtastic (2.2.1)
       actionpack (>= 3.0)
@@ -118,7 +118,7 @@ GEM
       activerecord (~> 3.1)
       activesupport (~> 3.1)
       polyamorous (~> 0.5.0)
-    mime-types (1.24)
+    mime-types (1.25)
     multi_json (1.7.9)
     mysql2 (0.3.13)
     net-scp (1.1.2)
@@ -177,7 +177,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.37)
-    uglifier (2.1.2)
+    uglifier (2.2.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
     uuidtools (2.1.4)
