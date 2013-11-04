@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: 144693101637b784ef3524749019ff8112c0df81
+  revision: a01677f58762394c2915eb512fe2f69aec6fbcf5
   specs:
     paperclip (3.5.2)
       activemodel (>= 3.0.0)
@@ -57,7 +57,7 @@ GEM
       builder
       mime-types
       xml-simple
-    aws-sdk (1.23.0)
+    aws-sdk (1.24.0)
       json (~> 1.4)
       nokogiri (>= 1.4.4, < 1.6.0)
       uuidtools (~> 2.1)
@@ -66,7 +66,7 @@ GEM
       sass (>= 3.2.0)
       thor
     builder (3.0.4)
-    capistrano (3.0.0)
+    capistrano (3.0.1)
       i18n
       rake (>= 10.0.0)
       sshkit (>= 0.0.23)
