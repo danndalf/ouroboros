@@ -1,5 +1,5 @@
 set :application, "ouroboros"
-set :repository,  "https://github.com/danndalf/ouroboros.git"
+set :repository,  "https://github.com/linenoise/ouroboros.git"
 set :scm, :git
 
 
